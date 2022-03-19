@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="skills.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <section class="home">
       <div class="nav__wrap">
-        <nav>
+        <nav class="home__nav">
           <img src="imgs/logo.svg" alt="로고" class="nav__logo" />
           <ul class="nav__menus">
             <li class="nav__menu">Home</li>
@@ -77,9 +78,95 @@
             <i class="fas fa-server"></i>
           </div>
           <h2 class="skill__title">Back</h2>
-          <p class="skill__content">JavaScript NodeJS ExpressJS Rest APIs</p>
+          <p class="skill__content">JavaScript ExpressJS Rest APIs MySQL MongoDB</p>
         </li>
       </ul>
+    </section>
+
+    <section class="skills">
+      <h1 class="skills__title">Skills</h1>
+      <p class="skills__content">기술에 대한 자신감을 퍼센트로 표현 해봤습니다</p>
+      <div class="skills__container">
+        <h3 class="skills__container__title">Stacks</h3>
+        <ul class="skills__lists">
+          <li class="skills__list">
+            <div class="list__column">
+              <h4 class="list__title">HTML</h4>
+              <span class="list__percent">90%</span>
+            </div>
+            <div class="list__bar">
+              <div class="bar__status" style="width: 90%"></div>
+            </div>
+          </li>
+          <li class="skills__list">
+            <div class="list__column">
+              <h4 class="list__title">CSS</h4>
+              <span class="list__percent">85%</span>
+            </div>
+            <div class="list__bar">
+              <div class="bar__status" style="width: 85%"></div>
+            </div>
+          </li>
+          <li class="skills__list">
+            <div class="list__column">
+              <h4 class="list__title">JavsScript</h4>
+              <span class="list__percent">80%</span>
+            </div>
+            <div class="list__bar">
+              <div class="bar__status" style="width: 80%"></div>
+            </div>
+          </li>
+          <li class="skills__list">
+            <div class="list__column">
+              <h4 class="list__title">React</h4>
+              <span class="list__percent">70%</span>
+            </div>
+            <div class="list__bar">
+              <div class="bar__status" style="width: 70%"></div>
+            </div>
+          </li>
+          <li class="skills__list">
+            <div class="list__column">
+              <h4 class="list__title">ExpressJS</h4>
+              <span class="list__percent">70%</span>
+            </div>
+            <div class="list__bar">
+              <div class="bar__status" style="width: 70%"></div>
+            </div>
+          </li>
+          <li class="skills__list">
+            <div class="list__column">
+              <h4 class="list__title">Git</h4>
+              <span class="list__percent">70%</span>
+            </div>
+            <div class="list__bar">
+              <div class="bar__status" style="width: 70%"></div>
+            </div>
+          </li>
+          <li class="skills__list">
+            <div class="list__column">
+              <h4 class="list__title">TypeScript</h4>
+              <span class="list__percent">60%</span>
+            </div>
+            <div class="list__bar">
+              <div class="bar__status" style="width: 60%"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects">
+      <nav class="projects__nav">
+        <span class="projects__category">All</span>
+        <span class="projects__category">Front</span>
+        <span class="projects__category">Back</span>
+      </nav>
+      <div class="grid">
+        <div class="card">
+          <img src="" alt="" class="card__img" />
+        </div>
+      </div>
     </section>
   </body>
 </html>

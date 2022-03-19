@@ -18,17 +18,21 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .nav__wrap .nav__menus {
-    display: none;
+  .nav__wrap {
+    background-color: #e7e5dc;
+  }
+
+  .about .about__skills {
+    flex-direction: column;
+  }
+
+  .about__skills .about__skill {
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .nav__wrap i {
-    display: none;
-  }
-
-  .nav__wrap .nav__menus--mobile {
     display: none;
   }
 }

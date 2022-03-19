@@ -5,8 +5,9 @@
   padding: 50px 20px;
 }
 
-.about .about__column:first-child {
+.about .about__column {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .about__column .about__title {
@@ -18,4 +19,39 @@
 .about__column .about__content {
   line-height: 28px;
   font-size: 20px;
+}
+
+.about .about__skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.about__skills .about__skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #636e72;
+}
+
+.about__skill .skill__icon {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #a29bfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.about__skill .skill__title {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.skill__icon i {
+  font-size: 70px;
+  color: #a29bfe;
 }
