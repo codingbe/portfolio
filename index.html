@@ -8,199 +8,78 @@
     <meta name="author" content="KimJungHwan" />
     <title>JungHwan's Portfolio</title>
     <link rel="icon" type="image/ico" href="imgs/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/9eb162ac0d.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <section class="home">
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <img src="imgs/logo.jpg" alt="logo" class="logo" />
-          <span class="logo--name">JungHwan</span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__menu__list">Home</li>
-          <li class="navbar__menu__list">About</li>
-          <li class="navbar__menu__list">Skills</li>
-          <li class="navbar__menu__list">Projects</li>
-          <li class="navbar__menu__list">Contact</li>
+      <div class="nav__wrap">
+        <nav>
+          <img src="imgs/logo.svg" alt="로고" class="nav__logo" />
+          <ul class="nav__menus">
+            <li class="nav__menu">Home</li>
+            <li class="nav__menu">About</li>
+            <li class="nav__menu">Skills</li>
+            <li class="nav__menu">Projects</li>
+            <li class="nav__menu">Contact</li>
+          </ul>
+          <i class="fas fa-bars"></i>
+        </nav>
+        <ul class="nav__menus--mobile hidden">
+          <li class="nav__menu">Home</li>
+          <li class="nav__menu">About</li>
+          <li class="nav__menu">Skills</li>
+          <li class="nav__menu">Projects</li>
+          <li class="nav__menu">Contact</li>
         </ul>
-      </nav>
-      <img src="imgs/logo.jpg" alt="profile" class="home__profile" />
-      <p class="home__intro">
-        안녕하세요,<br /><br />
-        혼자 독학하며 실력을 쌓고있는 개발자 입니다.
-      </p>
-      <p class="home__description">
-        <br />노마드코더와 드림코딩에서 인터넷 강의를 들으며 독학했습니다.
-      </p>
-      <button class="home__btn">contact me</button>
+      </div>
+      <div class="home__profile">
+        <img src="imgs/logo.svg" alt="내자신" />
+        <p class="profile__info">안녕하세요, <br />프론트엔드 개발자 김정환 입니다</p>
+        <p class="profile__content">React기반으로 웹 개발이 가능합니다.</p>
+      </div>
+      <button>Contact Me</button>
     </section>
+
     <section class="about">
-      <h1 class="about__title">About me</h1>
-      <p class="about__description">hello world!</p>
-      <div class="about__container">
-        <div class="about__card">
-          <div class="about__icon">
+      <div class="about__column">
+        <h2 class="about__title">About</h2>
+        <p class="about__content">
+          유튜브에서 노마드코더의 영상을 보며 웹 개발에 관심이 생겨 노마드코더에서 프론트엔드 관련 챌린지를 참여하고<br />
+          개인 프로젝트를 배포 및 운영 후 사용자로부터 기능에 대해 피드백을 받아 적용한 경험이 있습니다. 그리고<br />
+          코드스테이츠 부트캠프에 참여해서 스터디그룹 동료를 모집하고 협업과 커뮤니케이션 능력을 성장시키기 위해<br />
+          노력하고 고민했습니다. 팀 프로젝트에서 동료들과 같이 기획과 디자인을 하였으며 개발 중 문제가 생기면
+          즉각적으로<br />
+          화상 회의를 열어 커뮤니케이션하며 문제를 해결하기 위해 노력했습니다. 그리고 이슈가 발생했을 때 이슈 처리 및<br />
+          개선하는 역할을 맡았습니다. 부트캠프 수료 후 타입스크립트에 관심이 생겨 학습 중입니다.
+        </p>
+      </div>
+      <ul class="about__skills">
+        <li class="about__skill">
+          <div class="skill__icon">
             <i class="fab fa-html5"></i>
           </div>
-          <h2 class="about__card__title">Front-end</h2>
-          <p class="about__card__description">HTML, CSS, JavaScript, React</p>
-        </div>
-        <div class="about__card">
-          <div class="about__icon">
+          <h2 class="skill__title">Front</h2>
+          <p class="skill__content">HTML CSS JavaScript React TypeScript</p>
+        </li>
+        <li class="about__skill">
+          <div class="skill__icon">
             <i class="fas fa-server"></i>
           </div>
-          <h2 class="about__card__title">Back-end</h2>
-          <p class="about__card__description">JavaScript, NodeJS, Rest APIs</p>
-        </div>
-      </div>
-    </section>
-    <section class="skills">
-      <h1 class="skills__title">Skills</h1>
-      <h2 class="skills__subtitle">Skills & Attributes</h2>
-      <p class="skills__description">
-        언어에 대한 자신감을 퍼센트로 나타내고 사용할 수 있는 툴과 기타를
-        적어봤습니다.
-      </p>
-      <div class="skills__container">
-        <div class="skills__column">
-          <h1 class="skills__container__title">Skills</h1>
-          <ul class="skills__lists">
-            <li class="skills__list">
-              <div class="skills__list__column">
-                <span class="list__title">HTML</span>
-                <span class="list__percent">90%</span>
-              </div>
-              <div class="skills__list__column">
-                <div
-                  class="list__bar"
-                  style="background-color: brown; width: 90%"
-                ></div>
-              </div>
-            </li>
-            <li class="skills__list">
-              <div class="skills__list__column">
-                <span class="list__title">CSS</span>
-                <span class="list__percent">85%</span>
-              </div>
-              <div class="skills__list__column">
-                <div
-                  class="list__bar"
-                  style="background-color: brown; width: 85%"
-                ></div>
-              </div>
-            </li>
-            <li class="skills__list">
-              <div class="skills__list__column">
-                <span class="list__title">JavaScript</span>
-                <span class="list__percent">80%</span>
-              </div>
-              <div class="skills__list__column">
-                <div
-                  class="list__bar"
-                  style="background-color: brown; width: 80%"
-                ></div>
-              </div>
-            </li>
-            <li class="skills__list">
-              <div class="skills__list__column">
-                <span class="list__title">React</span>
-                <span class="list__percent">75%</span>
-              </div>
-              <div class="skills__list__column">
-                <div
-                  class="list__bar"
-                  style="background-color: brown; width: 75%"
-                ></div>
-              </div>
-            </li>
-            <li class="skills__list">
-              <div class="skills__list__column">
-                <span class="list__title">NodeJS</span>
-                <span class="list__percent">70%</span>
-              </div>
-              <div class="skills__list__column">
-                <div
-                  class="list__bar"
-                  style="background-color: brown; width: 70%"
-                ></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="skills__column">
-          <div class="skills__tools__container">
-            <h1 class="skills_tools__title">Tools</h1>
-            <ul class="skills__tools">
-              <li class="skills__tool">Visual Studio</li>
-            </ul>
-          </div>
-          <div class="skills__etc__container">
-            <h1 class="skills__etc__title">Etc</h1>
-            <ul class="skils__etcs">
-              <li class="skills__etc">Git</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project">
-      <h1 class="project__title">Projects</h1>
-      <ul class="project__buttons">
-        <li class="project__button">All</li>
-        <li class="project__button" data-type="front-end">Front-end</li>
-        <li class="project__button" data-type="back-end">Back-end</li>
-      </ul>
-      <ul class="project__lists">
-        <li class="project__list">
-          <a
-            href="https://github.com/codingbe/nomflix"
-            class="project__link"
-            target="_blank"
-          >
-            <img src="imgs/nomflix.png" alt="project" class="project__img" />
-          </a>
-        </li>
-        <li class="project__list">
-          <a
-            href="https://github.com/codingbe/coin-info"
-            class="project__link"
-            target="_blank"
-          >
-            <img src="imgs/coin-info.png" alt="project" class="project__img" />
-          </a>
+          <h2 class="skill__title">Back</h2>
+          <p class="skill__content">JavaScript NodeJS ExpressJS Rest APIs</p>
         </li>
       </ul>
-    </section>
-    <section class="contact">
-      <h1 class="contact__title">Let's talk</h1>
-      <span class="contact__email">descuento@naver.com</span>
-      <div class="contact__link">
-        <a
-          href="https://github.com/codingbe?tab=repositories"
-          class="contact__github"
-          target="_blank"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <footer class="contact__footer">
-        <span class="contact__footer__text"
-          >2021 Junior Dev Jung - All rights reserved</span
-        >
-      </footer>
     </section>
   </body>
 </html>

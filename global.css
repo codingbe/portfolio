@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Noto Sans KR", "Roboto";
+}
+
+section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__wrap .nav__menus {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__wrap i {
+    display: none;
+  }
+
+  .nav__wrap .nav__menus--mobile {
+    display: none;
+  }
+}
