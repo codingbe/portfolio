@@ -1,3 +1,15 @@
+.projects {
+  background-color: #b2bec3;
+  padding: 24px;
+}
+
+.projects .projects__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .projects__nav {
   margin-bottom: 24px;
   display: flex;
@@ -21,7 +33,6 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: 200px;
   gap: 24px;
-  padding: 0px 15px;
 }
 
 .grid .card {

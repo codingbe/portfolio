@@ -1,11 +1,26 @@
 const home = document.querySelector(".home");
 const navWrap = home.querySelector(".nav__wrap");
-const navWrapHeight = navWrap.clientHeight;
-const mobileBtn = home.querySelector("i");
 const mobileNav = home.querySelector(".nav__menus--mobile");
+const navWrapHeight = navWrap.clientHeight;
 
-mobileBtn.addEventListener("click", () => {
-  mobileNav.classList.toggle("hidden");
+home.addEventListener("click", (e) => {
+  const className = e.target.className;
+  if (className.indexOf("mobile--toggle") !== -1) {
+    mobileNav.classList.toggle("hidden");
+    return;
+  } else if (className === "nav__menu" || className === "home__contact" || className === "nav__logo") {
+    let target;
+    if (className === "nav__menu") {
+      target = document.querySelector(`.${e.target.innerText.toLowerCase()}`);
+    } else if (className === "home__contact") {
+      target = document.querySelector(`.${e.target.innerText.split(" ")[0].toLowerCase()}`);
+    } else if (className === "nav__logo") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const { top } = target.getClientRects()[0];
+    window.scrollBy({ top: top - navWrapHeight - 30, behavior: "smooth" });
+  }
 });
 
 window.addEventListener("scroll", () => {
