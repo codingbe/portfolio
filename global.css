@@ -59,6 +59,16 @@ footer .contact__title {
   font-size: 40px;
 }
 
+footer .contact__email {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+footer .contact__email:hover {
+  transform: scale(1.2);
+  color: #a29bfe;
+}
+
 footer .contact__email,
 .contact__copy {
   font-size: 15px;
