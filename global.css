@@ -78,6 +78,11 @@ footer .contact__email,
   display: none;
 }
 
+.selected {
+  transform: scale(1.2);
+  color: #a29bfe;
+}
+
 @media screen and (max-width: 767px) {
   .nav__wrap {
     background-color: #e7e5dc;

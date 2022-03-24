@@ -1,4 +1,5 @@
 const projects = document.querySelector(".projects");
+const projectsNav = projects.querySelectorAll(".projects__category");
 const grid = projects.querySelector(".grid");
 
 const getProjects = async (type) => {
@@ -29,6 +30,8 @@ projects.addEventListener("click", (e) => {
   if (className === "projects__category") {
     const type = e.target.innerText.toLowerCase();
     getProjects(type);
+    projectsNav.forEach((nav) => nav.classList.remove("selected"));
+    e.target.classList.add("selected");
   }
 });
 
