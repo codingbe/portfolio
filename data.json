@@ -52,7 +52,7 @@
       "name": "동네북",
       "description": "주변에서 책을 교환해보세요",
       "page": "https://dongnebook.netlify.app",
-      "github": "https://github.com/codestates/dongnebook",
+      "github": "https://github.com/codingbe/dongnebook",
       "img": "imgs/dongnebook.gif",
       "type": "front"
     },
