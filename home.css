@@ -30,6 +30,8 @@
   left: 0;
   top: 0;
   transition: all 0.4s;
+  position: fixed;
+  padding: 0 10px;
 }
 
 .home__nav {
