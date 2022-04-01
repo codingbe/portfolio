@@ -15,6 +15,13 @@
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+  transition: 0.4s;
+}
+
+.home button:hover {
+  color: #a29bfe;
+  transform: scale(1.2);
+  border-color: #a29bfe;
 }
 
 .nav__wrap {
@@ -54,13 +61,18 @@
   cursor: pointer;
 }
 
-.home__nav .nav__menu {
-  margin-left: 20px;
+.home__nav li {
   cursor: pointer;
 }
 
+.home__nav .nav__menu {
+  margin-left: 20px;
+  transition: 0.4s;
+}
+
 .home__nav .nav__menu:hover {
-  color: gray;
+  color: #a29bfe;
+  transform: scale(1.2);
 }
 
 .nav__wrap .nav__menus--mobile {
@@ -80,8 +92,8 @@
 }
 
 .nav__menus--mobile .nav__menu:hover {
-  color: gray;
-  cursor: pointer;
+  color: #a29bfe;
+  transform: scale(1.2);
 }
 
 .home .home__profile {

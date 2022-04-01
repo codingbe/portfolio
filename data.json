@@ -1,0 +1,69 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "percent": "90%"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "percent": "85%"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "percent": "80%"
+    },
+    {
+      "id": 4,
+      "name": "React",
+      "percent": "70%"
+    },
+    {
+      "id": 5,
+      "name": "Git",
+      "percent": "70%"
+    },
+    {
+      "id": 6,
+      "name": "ExpressJS",
+      "percent": "60%"
+    },
+    {
+      "id": 7,
+      "name": "TypeScript",
+      "percent": "60%"
+    },
+    {
+      "id": 8,
+      "name": "MySQL",
+      "percent": "50%"
+    },
+    {
+      "id": 9,
+      "name": "MongoDB",
+      "percent": "50%"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "동네북",
+      "description": "주변에서 책을 교환해보세요",
+      "page": "https://dongnebook.netlify.app",
+      "github": "https://github.com/codestates/dongnebook",
+      "img": "imgs/dongnebook.png",
+      "type": "front"
+    },
+    {
+      "id": 2,
+      "name": "바연젠",
+      "description": "바람의나라 연 보스 타이머",
+      "page": "https://bayeongen.shop",
+      "github": "https://github.com/codingbe/baramgen",
+      "img": "imgs/bayeongen.gif",
+      "type": "front"
+    }
+  ]
+}
