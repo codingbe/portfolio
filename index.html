@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="skills.css" />
     <link rel="stylesheet" href="projects.css" />
     <script src="home.js" defer></script>
+    <script src="skills.js" defer></script>
   </head>
   <body>
     <section class="home">
@@ -35,7 +36,7 @@
             <li class="nav__menu">Projects</li>
             <li class="nav__menu">Contact</li>
           </ul>
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars mobile--toggle"></i>
         </nav>
         <ul class="nav__menus--mobile hidden">
           <li class="nav__menu">Home</li>
@@ -51,12 +52,12 @@
         <p class="profile__info">안녕하세요, <br />프론트엔드 개발자 김정환 입니다</p>
         <p class="profile__content">React기반으로 웹 개발이 가능합니다.</p>
       </div>
-      <button>Contact Me</button>
+      <button class="home__contact">Contact Me</button>
     </section>
 
     <section class="about">
       <div class="about__column">
-        <h2 class="about__title">About</h2>
+        <h1 class="about__title">About</h1>
         <p class="about__content">
           유튜브에서 노마드코더의 영상을 보며 웹 개발에 관심이 생겨 노마드코더에서 프론트엔드 관련 챌린지를 참여하고<br />
           개인 프로젝트를 배포 및 운영 후 사용자로부터 기능에 대해 피드백을 받아 적용한 경험이 있습니다. 그리고<br />
@@ -89,29 +90,19 @@
       <h1 class="skills__title">Skills</h1>
       <p class="skills__content">기술에 대한 자신감을 퍼센트로 표현 해봤습니다</p>
       <div class="skills__container">
-        <h3 class="skills__container__title">Stacks</h3>
-        <ul class="skills__lists">
-          <li class="skills__list">
-            <div class="list__column">
-              <h4 class="list__title">HTML</h4>
-              <span class="list__percent">90%</span>
-            </div>
-            <div class="list__bar">
-              <div class="bar__status" style="width: 90%"></div>
-            </div>
-          </li>
-        </ul>
+        <ul class="skills__lists"></ul>
       </div>
     </section>
 
     <section class="projects">
+      <h1 class="projects__title">Projects</h1>
       <nav class="projects__nav">
         <span class="projects__category">All</span>
         <span class="projects__category">Front</span>
         <span class="projects__category">Back</span>
       </nav>
       <div class="grid">
-        <div class="card">
+        <div class="card" data-type="front">
           <div class="card__info">
             <h2 class="card__title">동네북</h2>
             <p class="card__description">주변에서 책을 교환해보세요</p>
@@ -125,11 +116,11 @@
       </div>
     </section>
 
-    <footer>
-      <h1 class="footer__title">Contact</h1>
-      <span class="footer__email">voluntad3000@gmail.com</span>
+    <footer class="contact">
+      <h1 class="contact__title">Contact</h1>
+      <span class="contact__email">voluntad3000@gmail.com</span>
       <a href="https://github.com/codingbe" target="_blank"><i class="fab fa-github"></i></a>
-      <span class="footer__copy">Copyright 2022. codingbe all rights reserved.</span>
+      <span class="contact__copy">Copyright 2022. codingbe all rights reserved.</span>
     </footer>
   </body>
 </html>
