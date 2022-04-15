@@ -3,6 +3,20 @@ const navWrap = home.querySelector(".nav__wrap");
 const mobileNav = home.querySelector(".nav__menus--mobile");
 const navWrapHeight = navWrap.clientHeight;
 
+const handleScroll = () => {
+  if (window.scrollY >= navWrapHeight) {
+    navWrap.style.position = "fixed";
+    navWrap.style.boxShadow = "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px";
+    navWrap.style.backgroundColor = "#E7E5DC";
+    navWrap.style.padding = "0px 10px";
+  } else if (window.scrollY <= navWrapHeight - 30) {
+    navWrap.style.removeProperty("position");
+    navWrap.style.removeProperty("box-shadow");
+    navWrap.style.removeProperty("background-color");
+    navWrap.style.removeProperty("padding");
+  }
+};
+
 home.addEventListener("click", (e) => {
   const className = e.target.className;
   if (className.indexOf("mobile--toggle") !== -1) {
@@ -23,16 +37,6 @@ home.addEventListener("click", (e) => {
   }
 });
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= navWrapHeight) {
-    navWrap.style.position = "fixed";
-    navWrap.style.boxShadow = "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px";
-    navWrap.style.backgroundColor = "#E7E5DC";
-    navWrap.style.padding = "0px 10px";
-  } else if (window.scrollY <= navWrapHeight - 30) {
-    navWrap.style.removeProperty("position");
-    navWrap.style.removeProperty("box-shadow");
-    navWrap.style.removeProperty("background-color");
-    navWrap.style.removeProperty("padding");
-  }
-});
+window.addEventListener("scroll", handleScroll);
+
+handleScroll();
