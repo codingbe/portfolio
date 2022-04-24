@@ -6,6 +6,8 @@
   background-image: url("imgs/background.png");
   padding: 0 15px 40px 15px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .home button {
@@ -45,7 +47,6 @@
   color: black;
   font-weight: bold;
   padding: 10px 0;
-  z-index: 10;
 }
 
 .nav__logo {
