@@ -5,15 +5,11 @@ const navWrapHeight = navWrap.clientHeight;
 
 const handleScroll = () => {
   if (window.scrollY >= navWrapHeight) {
-    navWrap.style.position = "fixed";
     navWrap.style.boxShadow = "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px";
     navWrap.style.backgroundColor = "#E7E5DC";
-    navWrap.style.padding = "0px 10px";
   } else if (window.scrollY <= navWrapHeight - 30) {
-    navWrap.style.removeProperty("position");
     navWrap.style.removeProperty("box-shadow");
     navWrap.style.removeProperty("background-color");
-    navWrap.style.removeProperty("padding");
   }
 };
 
@@ -32,8 +28,11 @@ home.addEventListener("click", (e) => {
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
-    const { top } = target.getClientRects()[0];
-    window.scrollBy({ top: top - navWrapHeight - 30, behavior: "smooth" });
+    const top = target.offsetTop - navWrapHeight;
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
   }
 });
 
