@@ -1,6 +1,8 @@
 .projects {
   background-color: #b2bec3;
   padding: 24px;
+  position: relative;
+  z-index: 0;
 }
 
 .projects .projects__title {
@@ -24,7 +26,7 @@
 }
 
 .projects__nav .projects__category:hover {
-  color: #a29bfe;
+  color: #f2f2f2;
   transform: scale(1.2);
 }
 
